@@ -146,7 +146,7 @@ img {
   margin: 0;
   margin-bottom: 50px;
   font-size: 36px;
-  line-height: calc(24 / 36);
+  line-height: calc(42 / 36);
   text-align: center;
   color: var(--secondary-text-color);
 }
@@ -179,7 +179,9 @@ img {
   width: 370px;
 }
 .project-desc {
-  border: 1px solid #eeeeee;
+  border-right: 1px solid var(--primary-grey-color);
+  border-bottom: 1px solid var(--primary-grey-color);
+  border-left: 1px solid var(--primary-grey-color);
 }
 /* ------------------------activity----------------- */
 .section.activity {
@@ -247,14 +249,19 @@ img {
 }
 .projects .subtitle {
   margin-left: 24px;
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   color: #212121;
 }
+.project-card > img {
+  margin-bottom: 20px;
+}
 .projects .text {
   margin-left: 24px;
+  padding-bottom: 20px;
 }
 .projects .card + .card {
   margin-left: 30px;
@@ -289,9 +296,10 @@ img {
 
   color: var(--primary-white-color);
 }
-.footer-contact {
+.footer-links .item:not(:last-child) {
   margin-bottom: 9px;
-
+}
+.footer-contact {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer .link {
@@ -303,6 +311,7 @@ img {
 
 .button {
   display: inline-block;
+  cursor: pointer;
 
   font-family: inherit;
   color: var(--secondary-text-color);
@@ -343,8 +352,4 @@ img {
   line-height: calc(30 / 16);
   text-align: center;
   letter-spacing: 0.06em;
-}
-.order-button:hover,
-.order-button:focus {
-  cursor: pointer;
 }
