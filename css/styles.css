@@ -117,11 +117,12 @@ img {
 }
 /* ----------------hero--------------- */
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
-
   background-color: #2f303a;
   text-align: center;
+}
+.hero-text {
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   max-width: 700px;
@@ -137,6 +138,22 @@ img {
   text-transform: uppercase;
   color: var(--primary-white-color);
 }
+/* .overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-Img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+} */
 /* -------------------section-------------- */
 .section {
   padding-top: 94px;
@@ -150,16 +167,7 @@ img {
   text-align: center;
   color: var(--secondary-text-color);
 }
-.specialities .sectoin-title,
-.projects .sectoin-title {
-  position: absolute;
-  top: -9999px;
-  left: -9999px;
-}
-.card-list {
-  display: flex;
-  flex-wrap: wrap;
-}
+
 /* -------------------specialities--------------- */
 .specialities .subtitle {
   text-transform: uppercase;
@@ -169,14 +177,15 @@ img {
   display: flex;
   justify-content: center;
 } */
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+}
 .specialities .card {
   width: 270px;
 }
 .specialities .card + .card {
   margin-left: 30px;
-}
-.projects .card {
-  width: 370px;
 }
 .project-desc {
   border-right: 1px solid var(--primary-grey-color);
@@ -244,20 +253,16 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.projects .card {
-  padding-bottom: 20px;
-}
+
 .projects .subtitle {
   margin-left: 24px;
   margin-bottom: 4px;
+  padding-top: 20px;
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   color: #212121;
-}
-.project-card > img {
-  margin-bottom: 20px;
 }
 .projects .text {
   margin-left: 24px;
@@ -268,6 +273,7 @@ img {
 }
 .projects .card {
   margin-bottom: 30px;
+  width: 370px;
 }
 .projects .card + .card:nth-child(3n + 1) {
   margin-left: 0;
@@ -292,7 +298,6 @@ img {
 }
 .address {
   margin-top: 20px;
-  margin-bottom: 8px;
 
   color: var(--primary-white-color);
 }
